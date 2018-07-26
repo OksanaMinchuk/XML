@@ -1,0 +1,70 @@
+package by.oksana.L10.BookShop;
+
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
+
+
+@XmlType(name =  "Book", propOrder =  {"id", "name", "author", "year"})
+
+public class Book {
+    private int id;
+    private String name;
+    private  String author;
+    private int year;
+
+
+
+    public Book(int id, String name, String author, int year) {
+        this.id = id;
+        this.name = name;
+        this.author = author;
+        this.year = year;
+    }
+
+    public Book () {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+@XmlAttribute (name =  "id ")
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "\nBook{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", year=" + year +
+                '}';
+    }
+}

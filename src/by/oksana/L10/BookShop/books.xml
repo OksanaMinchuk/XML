@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SHOP>
+    <nameOfShop>OZ.by</nameOfShop>
+    <phone>8-017-222-22-22</phone>
+    <books>
+        <book id ="111">
+            <name>Java_Methods_Programming</name>
+            <author>Blinov</author>
+            <year>2013</year>
+        </book>
+        <book id ="222">
+            <name>Java_for_children</name>
+            <author>Yakov_Fain</author>
+            <year>2011</year>
+        </book>
+        <book id ="333">
+            <name>Java_2</name>
+            <author>Shildt</author>
+            <year>2000</year>
+        </book>
+    </books>
+</SHOP>
